@@ -9,7 +9,7 @@ importSideEffects "isomorphic-fetch"
 // we get a json from our fetch request with a url field
 // so we create this type to map the json object
 type PictureInfo = { Url : string }
-
+printfn "%A" Fable.Import.vscode.x
 // This function will fetch a random dog url every reload of the page
 let getRandomDogImage url =
     fetch url [] // use the fetch api to load our resource
